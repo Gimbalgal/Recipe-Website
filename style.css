@@ -43,24 +43,29 @@ body{
 }
 .image{
     width: 50%;
+    align-content: center;
+    margin-left: 85px;
 }
 
-.img{
-    overflow-clip-margin: center-box;
+/* .img{
     overflow: clip;
-}
+} */
 .container h1{
     text-align: center;
     margin-bottom: 20px;
 }
 .meal-title{
     font-size: 1.5rem;
-    margin: 10px,
+    margin: 10px;
+    text-align: center;
+    
 }
+
 .description{
     font-size: 1rem;
     margin-bottom: 10px;
     color: #666;
+    text-align: center ;
 }
 .meal-ingredient li{
     margin: 5px 0;
@@ -70,6 +75,7 @@ body{
     list-style: none;
     padding: 0;
     margin: 10px 0;
+    text-align: center;
 }
 
 /* .meal-card img{
@@ -84,4 +90,15 @@ body{
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transform: translateX(80%);
 }
+
+
+@media (min-width: 1024px) {
+    .meal-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+    
