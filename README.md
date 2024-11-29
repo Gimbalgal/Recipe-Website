@@ -143,5 +143,6 @@ Provide information on the authors of the project. Include names, email addresse
 - **Email:** victoriaishabo55@gmail
 
 - **GitHub:** (https://github.com/Gimbalgal/Gimbalgal)
+- **Loom link:** (https://www.loom.com/share/64568e64d9ae4f139973baa6fa1fca61?sid=4f482f72-858d-42b3-8053-303017ac276b)
 
 
