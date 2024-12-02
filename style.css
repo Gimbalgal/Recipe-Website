@@ -1,0 +1,122 @@
+:root{
+    --white-color: #ffffff;
+    --red-color: #FF0000; 
+    --black-color: #0000; 
+    --rem: 16m;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#mealContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.meal-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.meal-card img{
+    max-width: 50%;
+    border-radius: 10px;
+}
+.meal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.meal-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1 fr));
+    gap: 20px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px,
+}
+.image{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* .img{
+    overflow: clip;
+} */
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.meal-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    
+}
+
+.meal-descriptions{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+}
+.meal-ingredients li{
+    margin-bottom: 4px;
+}
+.meal-ingredients{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* .meal-card img{
+    max-width: 100%;
+} */
+.meal-video-btn{
+    display: inline-block;
+    background-color: #ff4757;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+@media(min-width: 768px) {
+    .meal-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .meal-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+    
